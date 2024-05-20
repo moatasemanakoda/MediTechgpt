@@ -1,0 +1,692 @@
+{
+   "intents":[
+
+      {"tag":"hi",
+       "patterns":["Hi"],
+       "responses":["Hi how can I help?"],
+       "context_set":""
+      },
+     
+      {"tag":"How are you",
+       "patterns":["How are you"],
+       "responses":["fine and you"],
+       "context_set":""
+      },
+
+      {"tag":"Hello",
+       "patterns":["hello"],
+       "responses":["hello how can I help?"],
+       "context_set":""
+      },
+
+      {"tag":"See you later",
+       "patterns":["See you later"],
+       "responses":["See you later thanks for visiting"],
+       "context_set": ""
+      },
+  
+      {"tag":"goodbye",
+       "patterns":["Goodbye"],
+       "responses":["Bye Come back again soon."],
+       "context_set": ""
+      },
+
+      {"tag":"Bye",
+       "patterns":["Bye"],
+       "responses":[ "Bye Come back again soon."],
+       "context_set": ""
+      },
+
+      {"tag":"thanks",
+       "patterns":["Thanks"],
+       "responses":["Happy to help!"],
+       "context_set": ""
+      },
+
+      {"tag":"thanks",
+       "patterns":["Thank you"],
+       "responses":["Any time!"],
+       "context_set": ""
+      },
+
+      {"tag":"thanks",
+       "patterns":["That's helpful"],
+       "responses":["My pleasure"],
+       "context_set": ""
+      },
+
+      {"tag":"isn't",
+       "patterns":["this isn't working"],
+       "responses":["For a real assistant please call 1-800-HELPME", "Same-day clinic evaluation please call 1-800-HELPME"],
+       "context_set": ""
+      },
+
+      {"tag":"hours",
+       "patterns":["What hours are you open?", "What are your hours?", "When are you open?"],
+       "responses":["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"],
+       "context_set": ""
+      },
+
+      {"tag":"treatments",
+       "patterns":["What kind of treatment do you provide?", "What kinds of treatments are there?", "What do you provide?"],
+       "responses":["We are a walk-in clinic and provide vaccinations or treatment for basic illness and injuries.", "We have doctors and nurses to assist you with questions or direct you to the right person."],
+       "context_set": ""
+      },
+
+      {"tag":"payments",
+       "patterns":["Is this covered by OHIP?", "Do I have to pay for this?", "How can I pay?"],
+       "responses":["If you have your health card it should be covered.", "We accept most major credit cards"],
+       "context_set": ""
+      },
+
+      {"tag":"opentoday",
+       "patterns":["Are you open today?", "When do you open today?", "What are your hours today?"],
+       "responses":["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"],
+       "context_set": ""
+      },
+      {"tag": "Sprains",
+       "patterns": ["How do you treat a sprain?", "what to do if i get a sprain?", "Which cream to apply if i get a sprain?", "Which medicine to apply if I get a sprain?"],
+       "responses": [" If you suffer from a sprain in a specific area and you have the following symptoms: 1- Pain. 2- Bloating and swelling. 3-Redness. 4- Difficulty in movement. 5- Muscle spasms. Please go to the orthopedic clinic to see a doctor and get appropriate treatment"],
+       "context_set": ""
+      },
+
+      {"tag": "COVID-19",
+       "patterns": ["What are the symptoms of COVID-19?", "How is COVID-19 treated?", "What should I do if I suspect I have COVID-19?", "How can I protect myself from COVID-19?" ,"COVID-19"],
+       "responses": ["If you suspect you have COVID-19, you may experience symptoms such as: 1- Fever or chills. 2- Cough. 3- Shortness of breath or difficulty breathing. 4- Fatigue. 5- Muscle or body aches. 6- Headache. 7- New loss of taste or smell. 8- Sore throat. 9- Congestion or runny nose. 10- Nausea or vomiting. 11- Diarrhea. Treatment for COVID-19 focuses on relieving symptoms and preventing complications. Mild cases can be managed at home with rest, fluids, and over-the-counter medications for pain and fever. Severe cases may require hospitalization and supportive care such as supplemental oxygen or mechanical ventilation. To protect yourself from COVID-19, practice good hand hygiene, wear a mask in public settings, maintain physical distance from others, and get vaccinated if eligible."],
+       "context_set": ""
+      },
+
+      
+      {"tag": "Headache",
+       "patterns": ["How do you treat a headache?", "What to do if I have a headache?", "Which medication is good for headaches?", "How can I relieve a headache?" ,"Headache"],
+       "responses": ["If you are experiencing a headache along with symptoms such as: 1- Pain in the head. 2- Sensitivity to light or sound. 3- Nausea or vomiting. 4- Tension or pressure in the head or neck. We recommend resting in a quiet and dark room, applying a cold compress to the forehead, and taking over-the-counter pain medication as directed by your doctor. If the headache persists or worsens, please consult a healthcare professional for further evaluation and treatment. You may consider visiting a neurology clinic for specialized care."],
+       "context_set": ""
+      },
+      
+      {"tag": "Heart Disease",
+       "patterns": ["What are the symptoms of heart disease?", "How do you treat heart disease?", "What should I do if I suspect I have heart disease?", "Which specialist should I see for heart disease?" ,"Heart Disease"],
+       "responses": ["If you suspect you have heart disease and experience symptoms such as: 1- Chest pain or discomfort. 2- Shortness of breath. 3- Fatigue. 4- Irregular heartbeat. 5- Swelling in the legs, ankles, or abdomen. It's important to seek medical attention promptly. Please consult a cardiologist for a comprehensive evaluation and appropriate treatment. You may consider visiting a cardiology clinic for specialized care."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Kidney Failure",
+       "patterns": ["What are the symptoms of kidney failure?", "How is kidney failure treated?", "What should I do if I suspect I have kidney failure?", "Which specialist should I see for kidney failure?" ,"Kidney Failure"],
+       "responses": ["If you suspect you have kidney failure and experience symptoms such as: 1- Decreased urine output. 2- Swelling in the legs, ankles, or feet. 3- Fatigue. 4- Shortness of breath. 5- Nausea. It's important to seek medical attention promptly. Please consult a nephrologist (kidney specialist) for a comprehensive evaluation and appropriate treatment. You may consider visiting a nephrology clinic for specialized care."],
+       "context_set": ""
+      },
+      
+      {"tag": "Common Cold",
+       "patterns": ["What are the symptoms of a cold?", "How can I treat a cold?", "What should I do if I have a cold?", "Which medication is good for a cold?" ,"Common Cold"],
+       "responses": ["If you have a cold and experience symptoms such as: 1- Runny or stuffy nose. 2- Sneezing. 3- Sore throat. 4- Coughing. 5- Mild body aches. You can manage your symptoms by getting plenty of rest, staying hydrated, Please go to the otolaryngology clinic to see a doctor and receive the appropriate treatment for your condition."],
+       "context_set": ""
+      },
+     
+      {"tag": "Fever",
+       "patterns": ["What are the symptoms of a fever?", "How can I treat a fever?", "What should I do if I have a fever?", "Which medication is good for a fever?" ,"Fever"],
+       "responses": ["If you have a fever and experience symptoms such as: 1- High body temperature (usually above 100.4°F or 38°C). 2- Chills or sweating. 3- Headache. 4- Muscle aches. 5- Loss of appetite. It's important to rest, stay hydrated, and monitor your temperature regularly. Over-the-counter fever reducers like acetaminophen or ibuprofen can help reduce fever and alleviate discomfort. However, if your fever persists for more than a few days, or if you experience severe symptoms such as difficulty breathing or confusion, please seek medical attention promptly.You may consider visiting a general practitioner or primary care clinic for evaluation and treatment of fever."],
+       "context_set": ""
+      },
+
+      {"tag": "Hypertension",
+       "patterns": ["What are the symptoms of hypertension?", "How can I manage hypertension?", "What should I do if I have high blood pressure?", "Which specialist should I see for hypertension?" ,"Hypertension"],
+       "responses": ["If you have hypertension and experience symptoms such as: 1- Headaches. 2- Shortness of breath. 3- Dizziness. 4- Chest pain. It's important to monitor your blood pressure regularly, maintain a healthy lifestyle including a balanced diet and regular exercise, and take prescribed medications as directed by your doctor. Please consult a cardiologist for a comprehensive evaluation and appropriate treatment.You may consider visiting a cardiology clinic or a general practitioner for management and treatment of hypertension."],
+       "context_set": ""
+      },
+
+      {"tag":"goodbye",
+       "patterns":["Bye"],
+       "responses":["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."],
+       "context_set": ""
+      },
+
+      {"tag": "Diabetes",
+       "patterns": ["What are the symptoms of diabetes?", "How can I manage diabetes?", "What should I do if I have diabetes?", "Which specialist should I see for diabetes?" ,"Diabetes"],
+       "responses": ["If you have diabetes and experience symptoms such as: 1- Frequent urination. 2- Increased thirst. 3- Fatigue. 4- Blurred vision. It's crucial to monitor your blood sugar levels regularly, follow a diabetic-friendly diet, engage in regular physical activity, and take prescribed medications (including insulin, if necessary) as directed by your doctor. Please consult an endocrinologist for specialized care and management of diabetes.You may consider visiting an endocrinology clinic for specialized care in managing diabetes."],
+       "context_set": ""
+      },
+      
+      {"tag": "Conjunctivitis",
+       "patterns": ["What are the symptoms of conjunctivitis?", "How can I treat conjunctivitis?", "What should I do if I have conjunctivitis?", "Which specialist should I see for conjunctivitis?" ,"Conjunctivitis"],
+       "responses": ["If you have conjunctivitis and experience symptoms such as: 1- Redness in the white of the eye or inner eyelid. 2- Watery or mucous discharge from the eye. 3- Itchy or burning eyes. 4- Sensation of a foreign body in the eye. It's important to practice good hygiene, avoid touching your eyes, and wash your hands frequently. Apply warm compresses to the affected eye and use over-the-counter artificial tears to relieve discomfort. Please consult an ophthalmologist for further evaluation and treatment if needed.You may consider visiting an ophthalmology clinic for specialized care in treating conjunctivitis."],
+       "context_set": ""  
+      },
+      
+      {"tag": "Dry Eye Syndrome",
+       "patterns": ["What are the symptoms of dry eye syndrome?", "How can I manage dry eye syndrome?", "What should I do if I have dry eye syndrome?", "Which specialist should I see for dry eye syndrome?"],
+       "responses": ["If you have dry eye syndrome and experience symptoms such as: 1- Stinging or burning sensation in the eyes. 2- Redness. 3- Sensitivity to light. 4- Blurred vision. It's important to avoid dry environments, use a humidifier, and take frequent breaks from screens. Over-the-counter artificial tears can provide relief, and prescription medications or procedures may be recommended by an ophthalmologist for severe cases.You must please go to an ophthalmology clinic for specialized care in treating dry eye syndrome."],
+       "context_set": ""
+      },
+
+      {"tag": "Glaucoma",
+       "patterns": ["What are the symptoms of glaucoma?", "How can I prevent glaucoma?", "What should I do if I have glaucoma?", "Which specialist should I see for glaucoma?"],
+       "responses": ["Glaucoma often has no symptoms in its early stages, but as it progresses, symptoms may include: 1- Gradual loss of peripheral vision. 2- Tunnel vision in advanced stages. 3- Severe eye pain. 4- Headache. Regular eye exams are crucial for early detection and treatment of glaucoma. It's also important to maintain a healthy lifestyle and manage other health conditions such as high blood pressure and diabetes, which can contribute to glaucoma. Please consult an ophthalmologist for diagnosis and management of glaucoma.You must please go to an ophthalmology clinic for specialized care in treating glaucoma."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Night Blindness",
+       "patterns": ["What are the symptoms of night blindness?", "How can I treat night blindness?", "What should I do if I have night blindness?", "Which specialist should I see for night blindness?" ,"Night Blindness"],
+       "responses": ["If you have night blindness and experience difficulty seeing in low light conditions or at night, it may be a sign of an underlying eye condition such as retinitis pigmentosa or vitamin A deficiency. To manage night blindness, ensure you have adequate lighting in your surroundings and avoid driving at night if possible. Additionally, consult an ophthalmologist for a comprehensive eye exam to determine the underlying cause and appropriate treatment.You must please go to an ophthalmology clinic for specialized care in diagnosing and treating night blindness."],
+       "context_set": ""
+      },
+
+      {"tag": "Breast Cancer",
+       "patterns": ["What are the symptoms of breast cancer?", "How is breast cancer treated?", "What should I do if I suspect I have breast cancer?", "Which specialist should I see for breast cancer?"],
+       "responses": ["If you suspect you have breast cancer and experience symptoms such as: 1- A lump or mass in the breast or armpit. 2- Changes in breast size, shape, or texture. 3- Nipple discharge, rash, or inversion. 4- Redness or thickening of the breast skin. It's important to seek medical attention promptly. Please consult an oncologist or breast surgeon for a comprehensive evaluation and appropriate treatment, which may include surgery, chemotherapy, radiation therapy, or hormone therapy.You must please go to an oncology clinic for specialized care in diagnosing and treating breast cancer."],
+       "context_set": ""
+      },
+      
+      {"tag": "Lung Cancer",
+       "patterns": ["What are the symptoms of lung cancer?", "How is lung cancer treated?", "What should I do if I suspect I have lung cancer?", "Which specialist should I see for lung cancer?" ,"Lung Cancer"],
+       "responses": ["If you suspect you have lung cancer and experience symptoms such as: 1- Persistent cough. 2- Chest pain. 3- Shortness of breath. 4- Unexplained weight loss. It's important to seek medical attention promptly. Please consult an oncologist or pulmonologist for a comprehensive evaluation and appropriate treatment, which may include surgery, chemotherapy, radiation therapy, targeted therapy, or immunotherapy.You must please go to an oncology clinic for specialized care in diagnosing and treating lung cancer."],
+       "context_set": ""
+      },
+    
+      {"tag": "Prostate Cancer",
+       "patterns": ["What are the symptoms of prostate cancer?", "How is prostate cancer treated?", "What should I do if I suspect I have prostate cancer?", "Which specialist should I see for prostate cancer?" ,"Prostate Cancer"],
+       "responses": ["If you suspect you have prostate cancer and experience symptoms such as: 1- Difficulty urinating. 2- Frequent urination, especially at night. 3- Blood in the urine or semen. 4- Erectile dysfunction. It's important to seek medical attention promptly. Please consult an oncologist or urologist for a comprehensive evaluation and appropriate treatment, which may include surgery, radiation therapy, hormone therapy, chemotherapy, or immunotherapy.You must please go to an oncology clinic for specialized care in diagnosing and treating prostate cancer."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Colorectal Cancer",
+       "patterns": ["What are the symptoms of colorectal cancer?", "How is colorectal cancer treated?", "What should I do if I suspect I have colorectal cancer?", "Which specialist should I see for colorectal cancer?" ,"Colorectal Cancer"],
+       "responses": ["If you suspect you have colorectal cancer and experience symptoms such as: 1- Changes in bowel habits. 2- Rectal bleeding or blood in the stool. 3- Abdominal discomfort or cramps. 4- Unexplained weight loss. It's important to seek medical attention promptly. Please consult an oncologist or gastroenterologist for a comprehensive evaluation and appropriate treatment, which may include surgery, chemotherapy, radiation therapy, targeted therapy, or immunotherapy.You must please go to an oncology clinic for specialized care in diagnosing and treating colorectal cancer."],
+       "context_set": ""
+      },
+
+      {"tag": "Leukemia",
+       "patterns": ["What are the symptoms of leukemia?", "How is leukemia treated?", "What should I do if I suspect I have leukemia?", "Which specialist should I see for leukemia?" ,"Leukemia"],
+       "responses": ["If you suspect you have leukemia and experience symptoms such as: 1- Fatigue. 2- Pale skin. 3- Frequent infections. 4- Easy bruising or bleeding. 5- Swollen lymph nodes. It's important to seek medical attention promptly. Please consult an oncologist or hematologist for a comprehensive evaluation and appropriate treatment, which may include chemotherapy, radiation therapy, targeted therapy, immunotherapy, or stem cell transplantation.You must please go to an oncology clinic for specialized care in diagnosing and treating leukemia."],
+       "context_set": ""
+      },
+
+      {"tag": "Gastritis",
+       "patterns": ["What are the symptoms of gastritis?", "How is gastritis treated?", "What should I do if I have gastritis?", "Which specialist should I see for gastritis?"],
+       "responses": ["If you have gastritis and experience symptoms such as: 1- Abdominal pain or discomfort. 2- Nausea or vomiting. 3- Loss of appetite. 4- Bloating or indigestion. It's important to avoid spicy, acidic, or fatty foods, and to eat smaller, more frequent meals. Over-the-counter antacids or prescription medications may help relieve symptoms. Please consult a gastroenterologist for further evaluation and treatment if needed.You must please go to a gastroenterology clinic for specialized care in diagnosing and treating gastritis"],
+       "context_set": ""
+      }, 
+
+      {"tag": "Appendicitis",
+       "patterns": ["What are the symptoms of appendicitis?", "How is appendicitis treated?", "What should I do if I suspect I have appendicitis?", "Which specialist should I see for appendicitis?"],
+       "responses": ["If you suspect you have appendicitis and experience symptoms such as: 1- Abdominal pain, usually starting around the navel and migrating to the lower right abdomen. 2- Nausea or vomiting. 3- Fever. 4- Loss of appetite. It's important to seek medical attention promptly. Appendicitis requires surgical removal of the appendix to prevent rupture and serious complications. Please consult a general surgeon or go to the emergency room for evaluation and treatment.You must please go to a general surgery clinic or an emergency department for evaluation and treatment of appendicitis."],
+       "context_set": ""
+      }, 
+
+      {"tag": "Cholecystitis",
+       "patterns": ["What are the symptoms of cholecystitis?", "How is cholecystitis treated?", "What should I do if I have cholecystitis?", "Which specialist should I see for cholecystitis?"],
+       "responses": ["If you have cholecystitis and experience symptoms such as: 1- Abdominal pain, usually in the upper right side. 2- Nausea or vomiting. 3- Fever. 4- Yellowing of the skin or eyes (jaundice). It's important to seek medical attention promptly. Treatment may involve antibiotics to control infection and surgery to remove the gallbladder in severe cases. Please consult a gastroenterologist or general surgeon for further evaluation and treatment.You must please go to a gastroenterology clinic or a general surgery clinic for specialized care in diagnosing and treating cholecystitis."],
+       "context_set": "" 
+      },
+
+      {"tag": "Ulcerative Colitis",
+       "patterns": ["What are the symptoms of ulcerative colitis?", "How is ulcerative colitis treated?", "What should I do if I have ulcerative colitis?", "Which specialist should I see for ulcerative colitis?"],
+       "responses": ["If you have ulcerative colitis and experience symptoms such as: 1- Diarrhea, often with blood or pus. 2- Abdominal pain or cramping. 3- Urgency to have a bowel movement. 4- Fatigue. Treatment may involve anti-inflammatory medications, immune system suppressors, or surgery in severe cases. Please consult a gastroenterologist for diagnosis and management of ulcerative colitis.You must please go to a gastroenterology clinic for specialized care in diagnosing and treating ulcerative colitis."],
+       "context_set": ""
+      }, 
+   
+      {"tag": "Enteritis",
+       "patterns": ["What are the symptoms of enteritis?", "How is enteritis treated?", "What should I do if I have enteritis?", "Which specialist should I see for enteritis?"],
+       "responses": ["If you have enteritis and experience symptoms such as: 1- Abdominal cramps or pain. 2- Diarrhea. 3- Nausea or vomiting. 4- Fever. It's important to stay hydrated and avoid foods that may worsen symptoms. In some cases, antibiotics may be prescribed if the cause of enteritis is bacterial. Please consult a gastroenterologist for further evaluation and treatment.You must please go to a gastroenterology clinic or a general practitioner for specialized care in diagnosing and treating enteritis."],
+       "context_set": "" 
+      },
+
+      {"tag": "Crohn's Disease",
+       "patterns": ["What are the symptoms of Crohn's disease?", "How is Crohn's disease treated?", "What should I do if I have Crohn's disease?", "Which specialist should I see for Crohn's disease?"],
+       "responses": ["If you have Crohn's disease and experience symptoms such as: 1- Abdominal pain or cramping. 2- Diarrhea. 3- Fatigue. 4- Weight loss. Treatment aims to reduce inflammation and manage symptoms. This may include medications such as anti-inflammatory drugs, immune system suppressors, or surgery in severe cases. Please consult a gastroenterologist for diagnosis and management of Crohn's disease.You must please go to a gastroenterology clinic for specialized care in diagnosing and treating Crohn's Disease."],
+       "context_set": "" 
+      },
+
+      {"tag": "H. pylori Infection",
+       "patterns": ["What are the symptoms of H. pylori infection?", "How is H. pylori infection treated?", "What should I do if I have H. pylori infection?", "Which specialist should I see for H. pylori infection?"],
+       "responses": ["If you have H. pylori infection and experience symptoms such as: 1- Abdominal pain or discomfort. 2- Nausea or vomiting. 3- Bloating. 4- Loss of appetite. Treatment usually involves a combination of antibiotics and acid-reducing medications to eradicate the bacteria and reduce symptoms. Please consult a gastroenterologist for diagnosis and treatment of H. pylori infection.You must please go to a gastroenterology clinic or a general practitioner for specialized care in diagnosing and treating H. pylori infection."],
+       "context_set": ""
+      },
+
+      {"tag": "Stress-induced Gastritis",
+       "patterns": ["What are the symptoms of stress-induced gastritis?", "How is stress-induced gastritis treated?", "What should I do if I have stress-induced gastritis?", "Which specialist should I see for stress-induced gastritis?"],
+       "responses": ["If you have stress-induced gastritis and experience symptoms such as: 1- Abdominal pain or discomfort. 2- Nausea or vomiting. 3- Loss of appetite. 4- Indigestion. It's important to manage stress through relaxation techniques, adequate sleep, and healthy coping strategies. Over-the-counter antacids may help relieve symptoms. Please consult a gastroenterologist for further evaluation and treatment if needed.You must please go to a gastroenterology clinic or a general practitioner for specialized care in diagnosing and treating stress-induced gastritis."],
+       "context_set": "" 
+      },
+     
+      {"tag": "Food-induced Enteritis",
+       "patterns": ["What are the symptoms of food-induced enteritis?", "How is food-induced enteritis treated?", "What should I do if I have food-induced enteritis?", "Which specialist should I see for food-induced enteritis?"],
+       "responses": ["If you have food-induced enteritis and experience symptoms such as: 1- Abdominal pain or cramping. 2- Diarrhea. 3- Nausea or vomiting. 4- Bloating. It's important to identify and avoid trigger foods that may worsen symptoms. A food diary may help track symptoms and identify problem foods. Please consult a gastroenterologist or allergist for further evaluation and management."],
+       "context_set": "" 
+      },
+ 
+      {"tag": "High-fat Diet-induced Cholecystitis",
+       "patterns": ["What are the symptoms of high-fat diet-induced cholecystitis?", "How is high-fat diet-induced cholecystitis treated?", "What should I do if I have high-fat diet-induced cholecystitis?", "Which specialist should I see for high-fat diet-induced cholecystitis?"],
+       "responses": ["If you have high-fat diet-induced cholecystitis and experience symptoms such as: 1- Abdominal pain, usually in the upper right side. 2- Nausea or vomiting. 3- Fever. 4- Jaundice. It's important to avoid high-fat foods and maintain a healthy diet. Treatment may involve antibiotics to control infection and surgery to remove the gallbladder in severe cases. Please consult a gastroenterologist or general surgeon for further evaluation and treatment.You must please go to a gastroenterology clinic or a general surgery clinic for specialized care in diagnosing and treating high-fat diet-induced cholecystitis."],
+       "context_set": "" 
+      },
+
+      {"tag": "Nervous Colitis",
+       "patterns": ["What are the symptoms of nervous colitis?", "How is nervous colitis treated?", "What should I do if I have nervous colitis?", "Which specialist should I see for nervous colitis?"],
+       "responses": ["If you have nervous colitis and experience symptoms such as: 1- Abdominal pain or cramping. 2- Diarrhea. 3- Bloating or gas. 4- Urgency to have a bowel movement. It's important to manage stress through relaxation techniques, regular exercise, and healthy coping strategies. Dietary changes and medications such as anti-diarrheal drugs or antidepressants may also help. Please consult a gastroenterologist for further evaluation and treatment.You must please go to a gastroenterology clinic or a general practitioner for specialized care in diagnosing and treating nervous colitis."],
+       "context_set": ""
+      },
+
+      {"tag": "Migraine",
+       "patterns": ["What are the symptoms of migraine?", "How is migraine treated?", "What should I do if I have migraine?", "Which specialist should I see for migraine?"],
+       "responses": ["If you have migraine and experience symptoms such as: 1- Severe throbbing or pulsating headache, usually on one side of the head. 2- Sensitivity to light, sound, or smells. 3- Nausea or vomiting. 4- Visual disturbances (aura) before the headache. It's important to manage triggers such as stress, lack of sleep, or certain foods. Over-the-counter pain relievers, prescription medications, and lifestyle changes may help prevent or alleviate migraine attacks. Please consult a neurologist for diagnosis and management of migraine.You must please go to a neurology clinic for specialized care in diagnosing and treating migraines."],
+       "context_set": ""
+      },
+
+      {"tag": "Multiple Sclerosis (MS)",
+       "patterns": ["What are the symptoms of multiple sclerosis?", "How is multiple sclerosis treated?", "What should I do if I have multiple sclerosis?", "Which specialist should I see for multiple sclerosis?"],
+       "responses": ["If you have multiple sclerosis (MS) and experience symptoms such as: 1- Fatigue. 2- Numbness or weakness in one or more limbs. 3- Vision problems, such as blurred or double vision. 4- Difficulty walking or coordination problems. Treatment aims to manage symptoms, slow disease progression, and improve quality of life. This may include medications, physical therapy, and lifestyle modifications. Please consult a neurologist for diagnosis and management of MS.You must please go to a neurology clinic for specialized care in diagnosing and treating multiple sclerosis (MS)"],
+       "context_set": ""
+      },
+   
+      {"tag": "Parkinson's Disease",
+       "patterns": ["What are the symptoms of Parkinson's disease?", "How is Parkinson's disease treated?", "What should I do if I have Parkinson's disease?", "Which specialist should I see for Parkinson's disease?"],
+       "responses": ["If you have Parkinson's disease and experience symptoms such as: 1- Tremors, usually starting in the hands or fingers. 2- Bradykinesia (slowness of movement). 3- Muscle stiffness or rigidity. 4- Impaired balance or coordination. Treatment aims to manage symptoms and improve quality of life. This may include medications, physical therapy, and lifestyle modifications. Please consult a neurologist for diagnosis and management of Parkinson's disease."],
+       "context_set": ""
+      },
+
+      {"tag": "Epilepsy",
+       "patterns": ["What are the symptoms of epilepsy?", "How is epilepsy treated?", "What should I do if I have epilepsy?", "Which specialist should I see for epilepsy?"],
+       "responses": ["If you have epilepsy and experience symptoms such as: 1- Recurrent seizures, which may involve convulsions, loss of consciousness, or unusual sensations. 2- Temporary confusion or loss of awareness. 3- Staring spells. 4- Uncontrollable jerking movements. Treatment aims to control seizures and prevent injury. This may include medications, lifestyle changes, and in some cases, surgery. Please consult a neurologist or epileptologist for diagnosis and management of epilepsy.You must please go to a neurology clinic for specialized care in diagnosing and treating epilepsy."],
+       "context_set": ""
+      },
+
+      {"tag": "Stroke",
+       "patterns": ["What are the symptoms of stroke?", "How is stroke treated?", "What should I do if I suspect I have a stroke?", "Which specialist should I see for stroke?"],
+       "responses": ["If you suspect you have a stroke, remember the FAST acronym: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services. Other symptoms may include sudden numbness or weakness in the face, arm, or leg, especially on one side of the body, sudden confusion, trouble speaking or understanding speech, sudden trouble seeing in one or both eyes, sudden trouble walking, dizziness, loss of balance or coordination, and sudden severe headache with no known cause. It's crucial to seek emergency medical attention immediately. Treatment depends on the type of stroke and may include clot-busting medications, procedures to remove clots, or rehabilitation therapies. Please call emergency services or go to the nearest hospital if you suspect a stroke.You must please go to a neurology clinic or the emergency department for immediate evaluation and treatment of stroke"],
+       "context_set": ""
+      },
+ 
+      {"tag": "Encephalitis",
+       "patterns": ["What are the symptoms of encephalitis?", "How is encephalitis treated?", "What should I do if I have encephalitis?", "Which specialist should I see for encephalitis?"],
+       "responses": ["If you have encephalitis and experience symptoms such as: 1- Fever. 2- Headache. 3- Confusion or altered mental status. 4- Seizures. 5- Sensitivity to light. It's important to seek medical attention promptly. Treatment may involve antiviral medications, corticosteroids, or supportive care to manage symptoms. Please consult a neurologist or infectious disease specialist for diagnosis and management of encephalitis.You must please go to a neurology clinic or the emergency department for specialized care in diagnosing and treating encephalitis"],
+       "context_set": ""
+      },
+ 
+      {"tag": "Paralysis",
+       "patterns": ["What are the symptoms of paralysis?", "How is paralysis treated?", "What should I do if I have paralysis?", "Which specialist should I see for paralysis?"],
+       "responses": ["Paralysis is the loss of muscle function in part of your body. Symptoms may include: 1- Loss of sensation. 2- Muscle weakness. 3- Inability to move. Paralysis can be temporary or permanent and may affect one or more body parts. Treatment depends on the underlying cause and severity of paralysis and may include physical therapy, occupational therapy, assistive devices, or surgery. Please consult a neurologist or physiatrist for diagnosis and management of paralysis.You must please go to a neurology clinic or a rehabilitation center for specialized care in managing and treating paralysis."],
+       "context_set": ""
+      },
+  
+      {"tag": "Tension Headache",
+       "patterns": ["What are the symptoms of tension headache?", "How is tension headache treated?", "What should I do if I have tension headache?", "Which specialist should I see for tension headache?"],
+       "responses": ["If you have tension headache and experience symptoms such as: 1- Dull, aching head pain. 2- Pressure or tightness in the forehead or back of the head. 3- Tenderness in the scalp, neck, or shoulder muscles. 4- Sensation of a tight band around the head. It's important to manage stress, practice relaxation techniques, and maintain good posture. Over-the-counter pain relievers, massage, and heat therapy may help relieve symptoms. Please consult a neurologist or primary care physician for further evaluation and management.You must please go to a neurology clinic or a general practitioner for specialized care in diagnosing and treating tension headaches."],
+       "context_set": ""
+      },
+
+      {"tag": "Grand Mal Seizure",
+       "patterns": ["What are the symptoms of grand mal seizure?", "How is grand mal seizure treated?", "What should I do if I witness someone having a grand mal seizure?", "Which specialist should I see for grand mal seizure?"],
+       "responses": ["Grand mal seizures, also known as tonic-clonic seizures, may involve: 1- Loss of consciousness. 2- Muscle rigidity (tonic phase). 3- Convulsions or jerking movements (clonic phase). 4- Tongue biting. 5- Loss of bladder or bowel control. If you witness someone having a grand mal seizure, it's important to stay calm, protect them from injury by removing nearby objects, cushion their head, and turn them onto their side to prevent choking. Do not restrain their movements or put anything in their mouth. After the seizure, provide reassurance and stay with them until they recover. Treatment for recurrent seizures may involve antiepileptic medications, lifestyle modifications, and seizure management techniques. Please consult a neurologist or epileptologist for diagnosis and management.You must please go to a neurology clinic or the emergency department for immediate evaluation and treatment of grand mal seizures."],
+       "context_set": ""
+      },
+
+      {"tag": "Amyotrophic Lateral Sclerosis (ALS)",
+       "patterns": ["What are the symptoms of ALS?", "How is ALS treated?", "What should I do if I have ALS?", "Which specialist should I see for ALS?"],
+       "responses": ["If you have ALS, also known as Lou Gehrig's disease, you may experience symptoms such as: 1- Muscle weakness or stiffness, especially in the limbs. 2- Muscle twitching or cramping. 3- Difficulty walking or performing daily tasks. 4- Slurred speech or difficulty swallowing. 5- Muscle atrophy. ALS is a progressive neurological disease with no cure. Treatment focuses on managing symptoms, maintaining function, and improving quality of life. This may include medications, physical therapy, speech therapy, and assistive devices. Please consult a neurologist or ALS specialist for diagnosis and management.You must please go to a neurology clinic or a specialized ALS clinic for comprehensive care in managing and treating ALS."],
+       "context_set": ""
+      },
+
+      {"tag": "Optic Neuritis",
+       "patterns": ["What are the symptoms of optic neuritis?", "How is optic neuritis treated?", "What should I do if I have optic neuritis?", "Which specialist should I see for optic neuritis?"],
+       "responses": ["If you have optic neuritis, you may experience symptoms such as: 1- Vision loss, often in one eye. 2- Blurred vision. 3- Eye pain, especially with eye movement. 4- Loss of color vision. Treatment may involve corticosteroids to reduce inflammation and speed recovery. Please consult a neurologist or ophthalmologist for diagnosis and management of optic neuritis.You must please go to a neurology clinic or an ophthalmology clinic for specialized care in diagnosing and treating optic neuritis."],
+       "context_set": ""
+      },
+
+      {"tag": "Restless Legs Syndrome (RLS)",
+       "patterns": ["What are the symptoms of restless legs syndrome?", "How is restless legs syndrome treated?", "What should I do if I have restless legs syndrome?", "Which specialist should I see for restless legs syndrome?"],
+       "responses": ["If you have restless legs syndrome, you may experience symptoms such as: 1- Uncomfortable sensations in the legs, often described as creeping, crawling, or tingling. 2- Urge to move the legs, usually relieved by movement. 3- Symptoms worsen at night or during periods of inactivity. Treatment may involve lifestyle changes, medications to relieve symptoms, and managing underlying conditions such as iron deficiency or peripheral neuropathy. Please consult a neurologist or sleep specialist for diagnosis and management of restless legs syndrome.You must please go to a neurology clinic or a sleep disorder clinic for specialized care in diagnosing and treating restless legs syndrome (RLS)."],
+       "context_set": ""
+      }, 
+ 
+      {"tag": "Alzheimer's Disease",
+       "patterns": ["What are the symptoms of Alzheimer's disease?", "How is Alzheimer's disease treated?", "What should I do if I suspect I have Alzheimer's disease?", "Which specialist should I see for Alzheimer's disease?"],
+       "responses": ["If you suspect you have Alzheimer's disease or experience symptoms such as: 1- Memory loss, especially of recent events. 2- Difficulty performing familiar tasks. 3- Confusion or disorientation, especially regarding time, place, or people. 4- Challenges with language, such as finding the right words. 5- Changes in mood or personality. It's important to seek medical attention promptly. Although there is no cure for Alzheimer's disease, early diagnosis and treatment may help slow its progression and improve quality of life. Please consult a neurologist or geriatrician for diagnosis and management.You must please go to a neurology clinic or a memory disorder clinic for specialized care in diagnosing and treating Alzheimer's Disease."],
+       "context_set": "" 
+      },
+
+      {"tag": "Bell's Palsy",
+       "patterns": ["What are the symptoms of Bell's palsy?", "How is Bell's palsy treated?", "What should I do if I have Bell's palsy?", "Which specialist should I see for Bell's palsy?"],
+       "responses": ["If you have Bell's palsy, you may experience symptoms such as: 1- Sudden weakness or paralysis on one side of the face. 2- Drooping of the mouth or eyelid. 3- Difficulty closing one eye or smiling. 4- Drooling. The exact cause of Bell's palsy is unknown,Therefore, please go to the Neurology Clinic .but it may be related to viral infections such as herpes simplex virus. Treatment may involve corticosteroids to reduce inflammation and promote recovery, as well as eye protection to prevent dryness or injury. Please consult a neurologist or otolaryngologist for diagnosis and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Arthritis",
+       "patterns": ["What are the symptoms of arthritis?", "How is arthritis treated?", "What should I do if I have arthritis?", "Which specialist should I see for arthritis?"],
+       "responses": ["If you have arthritis, you may experience symptoms such as: 1- Joint pain, stiffness, or swelling. 2- Decreased range of motion. 3- Redness or warmth around the joint. 4- Fatigue.Please go to the orthopedic clinic.Treatment aims to manage symptoms, reduce inflammation, and improve joint function. This may include medications, physical therapy, lifestyle changes, and joint injections. Please consult a rheumatologist or orthopedic specialist for diagnosis and management of arthritis."],
+       "context_set": ""
+      },
+   
+      {"tag": "Bone Fracture",
+       "patterns": ["What are the symptoms of a bone fracture?", "How is a bone fracture treated?", "What should I do if I suspect I have a bone fracture?", "Which specialist should I see for a bone fracture?"],
+       "responses": ["If you suspect you have a bone fracture, you may experience symptoms such as: 1- Severe pain, swelling, or bruising around the injured area. 2- Deformity or misalignment of the bone. 3- Inability to bear weight or use the injured limb. Treatment depends on the location and severity of the fracture but may involve immobilization with a cast or splint, pain management, and physical therapy. In some cases, surgery may be necessary to realign the bones and stabilize the fracture. Please consult an orthopedic surgeon or go to the emergency room for evaluation and treatment."],
+       "context_set": "" 
+      },
+   
+      {"tag": "Osteoporosis",
+       "patterns": ["What are the symptoms of osteoporosis?", "How is osteoporosis treated?", "What should I do if I have osteoporosis?", "Which specialist should I see for osteoporosis?"],
+       "responses": ["If you have osteoporosis, you may experience symptoms such as: 1- Back pain, caused by fractures or collapsed vertebrae. 2- Loss of height over time. 3- Stooped posture. 4- Fractures, especially in the hip, spine, or wrist.Therefore, please go to the orthopedic clinic. Treatment aims to prevent fractures, slow bone loss, and improve bone density. This may include medications, calcium and vitamin D supplements, weight-bearing exercises, and lifestyle changes. Please consult an endocrinologist or orthopedic specialist for diagnosis and management of osteoporosis."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Bursitis",
+       "patterns": ["What are the symptoms of bursitis?", "How is bursitis treated?", "What should I do if I have bursitis?", "Which specialist should I see for bursitis?"],
+       "responses": ["If you have bursitis, you may experience symptoms such as: 1- Joint pain or stiffness, especially with movement or pressure. 2- Swelling or redness around the affected joint. 3- Limited range of motion. Treatment may involve rest, ice, compression, and elevation (RICE), as well as anti-inflammatory medications and physical therapy. In some cases, aspiration of fluid from the bursa or corticosteroid injections may be necessary. Please consult an orthopedic specialist or rheumatologist for diagnosis and management of bursitis."],
+       "context_set": ""
+      },
+
+      {"tag": "ACL (Anterior Cruciate Ligament) Injury",
+       "patterns": ["What are the symptoms of an ACL injury?", "How is an ACL injury treated?", "What should I do if I suspect I have an ACL injury?", "Which specialist should I see for an ACL injury?"],
+       "responses": ["If you suspect you have an ACL injury, you may experience symptoms such as: 1- Sudden, severe pain in the knee. 2- Swelling within a few hours of the injury. 3- Instability or a popping sensation in the knee. 4- Difficulty bearing weight on the affected leg. Treatment depends on the severity of the injury and may include rest, ice, compression, and elevation (RICE), physical therapy, and bracing. In some cases, surgery may be necessary to reconstruct the torn ligament. Please consult an orthopedic surgeon or sports medicine specialist for diagnosis and management of an ACL injury."],
+       "context_set": ""
+      },
+
+      {"tag": "Meniscus Tear",
+       "patterns": ["What are the symptoms of a meniscus tear?", "How is a meniscus tear treated?", "What should I do if I suspect I have a meniscus tear?", "Which specialist should I see for a meniscus tear?"],
+       "responses": ["If you suspect you have a meniscus tear, you may experience symptoms such as: 1- Pain, especially when twisting or rotating the knee. 2- Swelling and stiffness in the knee joint. 3- Difficulty straightening the knee fully. 4- Sensation of locking or catching in the knee joint. Treatment depends on the severity and location of the tear. Minor tears may heal with rest, ice, compression, and elevation (RICE), along with physical therapy to strengthen the surrounding muscles. In cases of severe tears or persistent symptoms, arthroscopic surgery may be necessary to repair or remove the damaged meniscus. Please consult an orthopedic surgeon or sports medicine specialist for diagnosis and management of a meniscus tear."],
+       "context_set": ""
+      }, 
+
+      {"tag": "Ligament Tear",
+       "patterns": ["What are the symptoms of a ligament tear?", "How is a ligament tear treated?", "What should I do if I suspect I have a ligament tear?", "Which specialist should I see for a ligament tear?"],
+       "responses": ["If you suspect you have a ligament tear, you may experience symptoms such as: 1- Sudden, severe pain in the affected joint. 2- Swelling and bruising around the joint. 3- Instability or a feeling of looseness in the joint. 4- Difficulty bearing weight on the affected limb. Treatment depends on the location and severity of the tear. Minor tears may heal with rest, ice, compression, and elevation (RICE), along with physical therapy to strengthen the surrounding muscles and improve joint stability. In cases of severe tears or complete ruptures, surgery may be necessary to repair or reconstruct the damaged ligament. Please consult an orthopedic surgeon or sports medicine specialist for diagnosis and management of a ligament tear."],
+       "context_set": ""
+      },
+
+      {"tag": "Pelvic Fracture",
+       "patterns": ["What are the symptoms of a pelvic fracture?", "How is a pelvic fracture treated?", "What should I do if I suspect I have a pelvic fracture?", "Which specialist should I see for a pelvic fracture?"],
+       "responses": ["If you suspect you have a pelvic fracture, you may experience symptoms such as: 1- Severe pain in the pelvic area, especially with movement. 2- Swelling and bruising over the pelvis. 3- Difficulty walking or standing. 4- Tenderness or instability in the pelvic region. Pelvic fractures can vary in severity, from stable fractures that may heal with rest and immobilization to unstable fractures that require surgical intervention. Treatment may involve pain management, bed rest, the use of assistive devices for mobility, and possibly surgery to realign and stabilize the bones. Please consult an orthopedic surgeon or trauma specialist for diagnosis and management of a pelvic fracture."],
+       "context_set": ""
+      },
+
+      {"tag": "Muscle Strain",
+       "patterns": ["What are the symptoms of a muscle strain?", "How is a muscle strain treated?", "What should I do if I have a muscle strain?", "Which specialist should I see for a muscle strain?"],
+       "responses": ["If you have a muscle strain, you may experience symptoms such as: 1- Pain and tenderness in the affected muscle. 2- Swelling and bruising around the injured area. 3- Difficulty moving the muscle or joint. 4- Muscle weakness or spasms. Treatment for a muscle strain typically involves rest, ice, compression, and elevation (RICE) to reduce pain and swelling. Over-the-counter pain relievers, such as ibuprofen or acetaminophen, may also help alleviate discomfort. In some cases, physical therapy or gentle stretching exercises may be recommended to promote healing and restore mobility. Please consult a primary care physician, sports medicine specialist, or orthopedic surgeon for diagnosis and management of a muscle strain."],
+       "context_set": ""
+      },
+
+      {"tag": "Arterial Blockage",
+       "patterns": ["What are the symptoms of arterial blockage?", "How is arterial blockage treated?", "What should I do if I suspect I have arterial blockage?", "Which specialist should I see for arterial blockage?"],
+       "responses": ["If you suspect you have arterial blockage, you may experience symptoms such as: 1- Pain or cramping in the affected limb, especially during physical activity. 2- Weakness or numbness in the affected limb. 3- Coldness or paleness in the affected limb. 4- Poor wound healing or tissue death (gangrene) in severe cases. Treatment for arterial blockage aims to restore blood flow to the affected area. This may include lifestyle changes such as quitting smoking, exercising regularly, and eating a healthy diet. In some cases, medications to lower cholesterol or prevent blood clots may be prescribed. For severe blockages, procedures such as angioplasty, stenting, or bypass surgery may be necessary. Please consult a vascular surgeon or cardiologist for diagnosis and management of arterial blockage."],
+       "context_set": ""
+      },
+
+      {"tag": "Arterial Aneurysm",
+       "patterns": ["What are the symptoms of an arterial aneurysm?", "How is an arterial aneurysm treated?", "What should I do if I suspect I have an arterial aneurysm?", "Which specialist should I see for an arterial aneurysm?"],
+       "responses": ["If you suspect you have an arterial aneurysm, you may experience symptoms such as: 1- Pain or throbbing sensation in the affected area, often in the abdomen, chest, or back. 2- Pulsating mass or lump under the skin. 3- Nausea, vomiting, or dizziness in severe cases. Treatment for arterial aneurysms depends on the size, location, and risk of rupture. Small aneurysms may be monitored regularly with imaging tests. Larger or high-risk aneurysms may require surgical repair or endovascular procedures such as stent grafting. Please consult a vascular surgeon or interventional radiologist for diagnosis and management of arterial aneurysms."],
+       "context_set": ""
+      },
+
+      {"tag": "Pancreatitis",
+       "patterns": ["What are the symptoms of pancreatitis?", "How is pancreatitis treated?", "What should I do if I suspect I have pancreatitis?", "Which specialist should I see for pancreatitis?"],
+       "responses": ["If you suspect you have pancreatitis, you may experience symptoms such as: 1- Severe pain in the upper abdomen, often radiating to the back. 2- Nausea and vomiting. 3- Fever and rapid pulse. 4- Tender or swollen abdomen. Treatment for pancreatitis depends on the underlying cause and severity of symptoms. In mild cases, treatment may involve fasting, pain management, and intravenous fluids to rest the pancreas. In more severe cases, hospitalization may be necessary for close monitoring and supportive care. Treatment may also include medications to control pain, antibiotics to treat infections, and dietary changes to reduce strain on the pancreas. Please consult a gastroenterologist or pancreatologist for diagnosis and management of pancreatitis."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Pancreatic Cancer",
+       "patterns": ["What are the symptoms of pancreatic cancer?", "How is pancreatic cancer treated?", "What should I do if I suspect I have pancreatic cancer?", "Which specialist should I see for pancreatic cancer?"],
+       "responses": ["If you suspect you have pancreatic cancer, you may experience symptoms such as: 1- Jaundice (yellowing of the skin and eyes). 2- Abdominal or back pain. 3- Unexplained weight loss. 4- Loss of appetite. 5- Nausea and vomiting. Pancreatic cancer is often diagnosed at an advanced stage when symptoms become noticeable. Treatment options depend on the stage and location of the cancer but may include surgery, chemotherapy, radiation therapy, or a combination of treatments. Palliative care may also be provided to manage symptoms and improve quality of life. Please consult an oncologist or pancreatic cancer specialist for diagnosis and management."],
+       "context_set": "" 
+      },
+
+      {"tag": "Splenomegaly",
+       "patterns": ["What are the symptoms of splenomegaly?", "How is splenomegaly treated?", "What should I do if I suspect I have splenomegaly?", "Which specialist should I see for splenomegaly?"],
+       "responses": ["If you suspect you have splenomegaly, you may experience symptoms such as: 1- Pain or fullness in the upper left abdomen, especially after eating. 2- Fatigue or weakness. 3- Frequent infections or easy bleeding. 4- Anemia or low platelet count. Treatment for splenomegaly depends on the underlying cause and severity of symptoms. In some cases, no treatment may be necessary if the condition is mild and asymptomatic. Treatment may focus on managing underlying conditions such as infections, liver disease, or blood disorders. In severe cases or if complications arise, surgery to remove the spleen (splenectomy) may be necessary. Please consult a hematologist or gastroenterologist for diagnosis and management of splenomegaly."],
+       "context_set": "" 
+      },
+
+      {"tag": "Splenic Infarction",
+       "patterns": ["What are the symptoms of splenic infarction?", "How is splenic infarction treated?", "What should I do if I suspect I have splenic infarction?", "Which specialist should I see for splenic infarction?"],
+       "responses": ["If you suspect you have splenic infarction, you may experience symptoms such as: 1- Sudden, severe pain in the upper left abdomen. 2- Fever and chills. 3- Nausea and vomiting. 4- Tenderness or swelling in the abdomen. Splenic infarction occurs when blood flow to the spleen is blocked, leading to tissue death. Treatment may involve pain management, intravenous fluids, and antibiotics if infection is present. In severe cases, surgery may be necessary to remove part or all of the spleen. Please consult a hematologist or gastroenterologist for diagnosis and management of splenic infarction."],
+       "context_set": ""
+      }, 
+ 
+      {"tag": "Middle Ear Infection (Otitis Media)",
+       "patterns": ["What are the symptoms of a middle ear infection?", "How is a middle ear infection treated?", "What should I do if I suspect I have a middle ear infection?", "Which specialist should I see for a middle ear infection?"],
+       "responses": ["If you suspect you have a middle ear infection, you may experience symptoms such as: 1- Ear pain or discomfort, especially in children. 2- Hearing loss or muffled hearing. 3- Fluid drainage from the ear. 4- Fever. Treatment for a middle ear infection may involve pain management with over-the-counter medications such as ibuprofen or acetaminophen, and antibiotic therapy if the infection is bacterial. In some cases, ear tubes may be recommended to prevent recurrent infections. Please consult an otolaryngologist or pediatrician for diagnosis and management of a middle ear infection."],
+       "context_set": ""
+      },
+
+      {"tag": "Sore Throat (Pharyngitis)",
+       "patterns": ["What are the symptoms of a sore throat?", "How is a sore throat treated?", "What should I do if I have a sore throat?", "Which specialist should I see for a sore throat?"],
+       "responses": ["If you have a sore throat, you may experience symptoms such as: 1- Pain or irritation in the throat. 2- Difficulty swallowing. 3- Swollen glands in the neck. 4- Redness or white patches on the tonsils. Treatment for a sore throat depends on the underlying cause. If the sore throat is caused by a viral infection, treatment may focus on relieving symptoms with over-the-counter pain relievers, throat lozenges, and warm saltwater gargles. If the sore throat is bacterial (such as strep throat), antibiotics may be prescribed. Please consult an otolaryngologist, primary care physician, or urgent care provider for diagnosis and management of a sore throat."],
+       "context_set": ""
+      },
+
+      {"tag": "Sinusitis",
+       "patterns": ["What are the symptoms of sinusitis?", "How is sinusitis treated?", "What should I do if I suspect I have sinusitis?", "Which specialist should I see for sinusitis?"],
+       "responses": ["If you suspect you have sinusitis, you may experience symptoms such as: 1- Facial pain or pressure, especially around the eyes, cheeks, and forehead. 2- Nasal congestion or discharge. 3- Headache. 4- Cough. 5- Reduced sense of smell or taste. Treatment for sinusitis may include over-the-counter or prescription decongestants, nasal corticosteroids, saline nasal sprays, and pain relievers. In some cases, antibiotics may be prescribed if the sinusitis is bacterial. Please consult an otolaryngologist or primary care physician for diagnosis and management of sinusitis."],
+       "context_set": ""
+      },
+ 
+      {"tag": "External Ear Infection (Otitis Externa)",
+       "patterns": ["What are the symptoms of an external ear infection?", "How is an external ear infection treated?", "What should I do if I suspect I have an external ear infection?", "Which specialist should I see for an external ear infection?"],
+       "responses": ["If you suspect you have an external ear infection, you may experience symptoms such as: 1- Ear pain or discomfort, especially when touching or pulling the ear. 2- Itching or redness in the ear canal. 3- Drainage of clear, yellow, or bloody fluid from the ear. 4- Swollen or tender earlobe. Treatment for an external ear infection may include antibiotic ear drops, pain relievers, and keeping the ear dry. It's important to avoid inserting objects into the ear canal or attempting to clean it with cotton swabs, as this can worsen the infection. Please consult an otolaryngologist or primary care physician for diagnosis and management of an external ear infection."],
+       "context_set": ""
+      }, 
+ 
+      {"tag": "Laryngeal Cancer",
+       "patterns": ["What are the symptoms of laryngeal cancer?", "How is laryngeal cancer treated?", "What should I do if I suspect I have laryngeal cancer?", "Which specialist should I see for laryngeal cancer?"],
+       "responses": ["If you suspect you have laryngeal cancer, you may experience symptoms such as: 1- Persistent hoarseness or voice changes. 2- Sore throat or pain when swallowing. 3- Difficulty breathing or wheezing. 4- Lump or swelling in the neck. Treatment for laryngeal cancer depends on the stage and location of the tumor but may include surgery, radiation therapy, chemotherapy, or a combination of treatments. Early detection and treatment can improve outcomes, so it's important to seek medical attention if you experience symptoms. Please consult an otolaryngologist or oncologist for diagnosis and management of laryngeal cancer."],
+       "context_set": ""
+      },
+
+      {"tag": "Tonsillitis",
+       "patterns": ["What are the symptoms of tonsillitis?", "How is tonsillitis treated?", "What should I do if I suspect I have tonsillitis?", "Which specialist should I see for tonsillitis?"],
+       "responses": ["If you suspect you have tonsillitis, you may experience symptoms such as: 1- Sore throat. 2- Difficulty swallowing. 3- Swollen, red tonsils. 4- White or yellow patches on the tonsils. 5- Fever. Treatment for tonsillitis depends on the underlying cause. If the tonsillitis is caused by a viral infection, treatment may focus on relieving symptoms with over-the-counter pain relievers, throat lozenges, and warm saltwater gargles. If the tonsillitis is bacterial, such as strep throat, antibiotics may be prescribed. In recurrent or severe cases, tonsillectomy (surgical removal of the tonsils) may be recommended. Please consult an otolaryngologist, primary care physician, or urgent care provider for diagnosis and management of tonsillitis."],
+       "context_set": ""
+      },
+
+      {"tag": "Allergic Rhinitis",
+       "patterns": ["What are the symptoms of allergic rhinitis?", "How is allergic rhinitis treated?", "What should I do if I suspect I have allergic rhinitis?", "Which specialist should I see for allergic rhinitis?"],
+       "responses": ["If you suspect you have allergic rhinitis, you may experience symptoms such as: 1- Sneezing. 2- Runny or stuffy nose. 3- Itchy or watery eyes. 4- Nasal congestion. 5- Postnasal drip. Treatment for allergic rhinitis may include avoiding triggers, using over-the-counter or prescription antihistamines, nasal corticosteroids, decongestants, or allergy shots (immunotherapy). Please consult an allergist or otolaryngologist for diagnosis and management of allergic rhinitis."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Chronic Sinusitis",
+       "patterns": ["What are the symptoms of chronic sinusitis?", "How is chronic sinusitis treated?", "What should I do if I suspect I have chronic sinusitis?", "Which specialist should I see for chronic sinusitis?"],
+       "responses": ["If you suspect you have chronic sinusitis, you may experience symptoms such as: 1- Facial pain, pressure, or headache. 2- Nasal congestion or discharge. 3- Loss of smell. 4- Postnasal drip. Chronic sinusitis lasts for 12 weeks or longer despite treatment. Treatment may include nasal corticosteroids, saline nasal irrigation, antibiotics, or sinus surgery in severe cases. Please consult an otolaryngologist or primary care physician for diagnosis and management of chronic sinusitis."],
+       "context_set": ""
+      },
+
+      {"tag": "Ear Allergies",
+       "patterns": ["What are the symptoms of ear allergies?", "How are ear allergies treated?", "What should I do if I suspect I have ear allergies?", "Which specialist should I see for ear allergies?"],
+       "responses": ["If you suspect you have ear allergies, you may experience symptoms such as: 1- Itching or irritation in the ear canal. 2- Redness or swelling in the ear. 3- Drainage or fluid buildup in the ear. 4- Hearing loss or discomfort. Treatment for ear allergies may include avoiding triggers, using over-the-counter or prescription antihistamines, corticosteroid ear drops, or allergy shots (immunotherapy). Please consult an otolaryngologist or allergist for diagnosis and management of ear allergies."],
+       "context_set": "" 
+      },
+ 
+      {"tag": "Acute Sinusitis",
+       "patterns": ["What are the symptoms of acute sinusitis?", "How is acute sinusitis treated?", "What should I do if I suspect I have acute sinusitis?", "Which specialist should I see for acute sinusitis?"],
+       "responses": ["If you suspect you have acute sinusitis, you may experience symptoms such as: 1- Facial pain, pressure, or headache. 2- Nasal congestion or discharge. 3- Loss of smell. 4- Cough or postnasal drip. Acute sinusitis usually resolves within a few weeks with home remedies such as saline nasal irrigation, rest, and over-the-counter medications like decongestants or pain relievers. If symptoms persist or worsen, antibiotics may be prescribed. Please consult an otolaryngologist or primary care physician for diagnosis and management of acute sinusitis."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Deviated Septum",
+       "patterns": ["What are the symptoms of a deviated septum?", "How is a deviated septum treated?", "What should I do if I suspect I have a deviated septum?", "Which specialist should I see for a deviated septum?"],
+       "responses": ["If you suspect you have a deviated septum, you may experience symptoms such as: 1- Nasal congestion or blockage, especially on one side. 2- Difficulty breathing through the nose. 3- Frequent nosebleeds. 4- Facial pain or pressure. Treatment for a deviated septum depends on the severity of symptoms. In mild cases, over-the-counter decongestants or nasal steroid sprays may help alleviate symptoms. For more severe cases or if symptoms significantly affect quality of life, surgery to repair the septum (septoplasty) may be recommended. Please consult an otolaryngologist or rhinologist for diagnosis and management of a deviated septum."],
+       "context_set": ""
+      },
+
+      {"tag": "Tooth Decay (Caries)",
+       "patterns": ["What are the symptoms of tooth decay?", "How is tooth decay treated?", "What should I do if I suspect I have tooth decay?", "Which specialist should I see for tooth decay?"],
+       "responses": ["If you suspect you have tooth decay, you may experience symptoms such as: 1- Toothache or sensitivity to hot, cold, or sweet foods. 2- Visible pits or holes in the teeth. 3- White, brown, or black staining on the tooth surface. 4- Bad breath or an unpleasant taste in the mouth. Treatment for tooth decay depends on the extent of the damage. Early-stage decay may be treated with fluoride treatments or dental sealants to remineralize the enamel. Moderate to severe decay may require dental fillings, crowns, or root canal therapy. In advanced cases, extraction of the affected tooth may be necessary. Please consult a dentist or dental specialist for diagnosis and management of tooth decay."],
+       "context_set": ""
+      },
+  
+      {"tag": "Gingivitis",
+       "patterns": ["What are the symptoms of gingivitis?", "How is gingivitis treated?", "What should I do if I suspect I have gingivitis?", "Which specialist should I see for gingivitis?"],
+       "responses": ["If you suspect you have gingivitis, you may experience symptoms such as: 1- Red, swollen gums. 2- Bleeding gums, especially when brushing or flossing. 3- Bad breath. 4- Receding gums. Treatment for gingivitis involves improving oral hygiene habits, such as brushing and flossing regularly, and visiting the dentist for professional cleaning (scaling and root planing). In some cases, antimicrobial mouth rinses or antibiotics may be prescribed. Please consult a dentist or periodontist for diagnosis and management of gingivitis."],
+       "context_set": ""
+      },
+
+      {"tag": "Dental Abscess",
+       "patterns": ["What are the symptoms of a dental abscess?", "How is a dental abscess treated?", "What should I do if I suspect I have a dental abscess?", "Which specialist should I see for a dental abscess?"],
+       "responses": ["If you suspect you have a dental abscess, you may experience symptoms such as: 1- Severe, throbbing toothache. 2- Swelling of the face or jaw. 3- Fever. 4- Swollen, tender lymph nodes under the jaw or in the neck. A dental abscess is a serious infection that requires prompt treatment to prevent complications. Treatment may involve draining the abscess, prescribing antibiotics to clear the infection, and performing root canal therapy or tooth extraction to remove the source of infection. Please consult a dentist or oral surgeon for diagnosis and management of a dental abscess."],
+       "context_set": ""
+      },
+ 
+      {"tag": "COVID-19",
+       "patterns": ["What are the symptoms of COVID-19?", "How is COVID-19 treated?", "What should I do if I suspect I have COVID-19?", "How can I protect myself from COVID-19?"],
+       "responses": ["If you suspect you have COVID-19, you may experience symptoms such as: 1- Fever or chills. 2- Cough. 3- Shortness of breath or difficulty breathing. 4- Fatigue. 5- Muscle or body aches. 6- Headache. 7- New loss of taste or smell. 8- Sore throat. 9- Congestion or runny nose. 10- Nausea or vomiting. 11- Diarrhea. Treatment for COVID-19 focuses on relieving symptoms and preventing complications. Mild cases can be managed at home with rest, fluids, and over-the-counter medications for pain and fever. Severe cases may require hospitalization and supportive care such as supplemental oxygen or mechanical ventilation. To protect yourself from COVID-19, practice good hand hygiene, wear a mask in public settings, maintain physical distance from others, and get vaccinated if eligible."],
+       "context_set": ""
+      },
+
+      {"tag": "Avian Influenza",
+       "patterns": ["What are the symptoms of avian influenza?", "How is avian influenza treated?", "What should I do if I suspect I have avian influenza?", "How can I protect myself from avian influenza?"],
+       "responses": ["If you suspect you have avian influenza, you may experience symptoms such as: 1- Fever. 2- Cough. 3- Sore throat. 4- Muscle aches. 5- Headache. 6- Difficulty breathing. Avian influenza can cause severe respiratory illness and may lead to pneumonia or other complications. Treatment may include antiviral medications, supportive care, and hospitalization if necessary. To protect yourself from avian influenza, avoid contact with sick birds or contaminated environments, practice good hygiene, and follow food safety guidelines when handling poultry products."],
+       "context_set": ""
+      },
+
+      {"tag": "Swine Influenza",
+       "patterns": ["What are the symptoms of swine influenza?", "How is swine influenza treated?", "What should I do if I suspect I have swine influenza?", "How can I protect myself from swine influenza?"],
+       "responses": ["If you suspect you have swine influenza, you may experience symptoms such as: 1- Fever. 2- Cough. 3- Sore throat. 4- Body aches. 5- Headache. 6- Fatigue. Swine influenza is caused by influenza viruses that infect pigs and can occasionally spread to humans. Treatment may include antiviral medications, rest, and fluids. To protect yourself from swine influenza, practice good hygiene, avoid close contact with sick individuals or pigs, and get vaccinated against seasonal influenza viruses."],
+       "context_set": ""
+      },
+
+      {"tag": "Hepatitis",
+       "patterns": ["What are the symptoms of hepatitis?", "How is hepatitis treated?", "What should I do if I suspect I have hepatitis?", "How can I protect myself from hepatitis?"],
+       "responses": ["If you suspect you have hepatitis, you may experience symptoms such as: 1- Jaundice (yellowing of the skin and eyes). 2- Fatigue. 3- Abdominal pain or discomfort. 4- Loss of appetite. 5- Nausea and vomiting. 6- Dark urine. 7- Pale stools. Treatment for hepatitis depends on the type and severity of the infection. Acute hepatitis may resolve on its own with rest, fluids, and supportive care. Chronic hepatitis may require antiviral medications or other therapies to manage symptoms and prevent complications such as liver damage or liver cancer. To protect yourself from hepatitis, practice good hygiene, avoid sharing needles or personal items with infected individuals, and get vaccinated if available."],
+       "context_set": ""
+      },
+
+      {"tag": "Tuberculosis (TB)",
+       "patterns": ["What are the symptoms of tuberculosis?", "How is tuberculosis treated?", "What should I do if I suspect I have tuberculosis?", "How can I protect myself from tuberculosis?"],
+       "responses": ["If you suspect you have tuberculosis, you may experience symptoms such as: 1- Persistent cough lasting more than two weeks. 2- Chest pain. 3- Coughing up blood or sputum. 4- Fatigue. 5- Fever and chills. 6- Night sweats. Tuberculosis is a bacterial infection that primarily affects the lungs but can also involve other parts of the body. Treatment typically involves a combination of antibiotics taken for several months. To protect yourself from tuberculosis, avoid close contact with individuals known to have active TB disease, and get vaccinated if recommended in your area."],
+       "context_set": ""
+      },
+
+      {"tag": "Ebola Virus Disease",
+       "patterns": ["What are the symptoms of Ebola?", "How is Ebola treated?", "What should I do if I suspect I have Ebola?", "How can I protect myself from Ebola?"],
+       "responses": ["If you suspect you have Ebola, you may experience symptoms such as: 1- Fever. 2- Severe headache. 3- Muscle pain. 4- Weakness. 5- Fatigue. 6- Diarrhea. 7- Vomiting. 8- Abdominal pain. 9- Unexplained bleeding or bruising. Ebola virus disease is a severe, often fatal illness. Treatment involves supportive care such as intravenous fluids, electrolyte replacement, and maintaining oxygen levels. Strict infection control measures are necessary to prevent spread to others. To protect yourself from Ebola, avoid contact with blood or body fluids of infected individuals, and follow recommended precautions if you are providing care for someone with Ebola."],
+       "context_set": ""
+      },
+
+      {"tag": "Eye Allergies",
+       "patterns": ["What are the symptoms of eye allergies?", "How are eye allergies treated?", "What should I do if I suspect I have eye allergies?", "Which specialist should I see for eye allergies?"],
+       "responses": ["If you suspect you have eye allergies, you may experience symptoms such as: 1- Itchy or watery eyes. 2- Redness or inflammation of the conjunctiva (the clear tissue covering the white part of the eye). 3- Swelling or puffiness around the eyes. 4- Sensitivity to light. Treatment for eye allergies may include: 1- Avoiding allergens that trigger symptoms, such as pollen, pet dander, or dust mites. 2- Using over-the-counter or prescription antihistamine eye drops to relieve itching and redness. 3- Applying cool compresses to the eyes to reduce inflammation and swelling. 4- Taking oral antihistamines to alleviate systemic allergy symptoms. If symptoms persist or worsen, or if you have severe eye pain or vision changes, please consult an ophthalmologist or allergist for diagnosis and management of eye allergies."],
+       "context_set": ""
+      }, 
+
+      {"tag": "Thyroid Goiter",
+       "patterns": ["What are the symptoms of thyroid goiter?", "How is thyroid goiter treated?", "What should I do if I suspect I have thyroid goiter?", "Which specialist should I see for thyroid goiter?"],
+       "responses": ["If you suspect you have thyroid goiter, you may experience symptoms such as: 1- Visible swelling or enlargement of the neck, particularly in the area of the thyroid gland. 2- Difficulty swallowing or breathing, especially if the goiter is large enough to compress the nearby structures in the neck. 3- Hoarseness or voice changes, if the goiter affects the vocal cords. Thyroid goiter can be caused by various factors, including iodine deficiency, autoimmune diseases (such as Hashimoto's thyroiditis or Graves' disease), or nodules within the thyroid gland. Treatment for thyroid goiter depends on the underlying cause and severity of symptoms. Options may include: 1- Medications to regulate thyroid hormone levels, such as levothyroxine or antithyroid drugs. 2- Radioactive iodine therapy to shrink the goiter or reduce thyroid hormone production. 3- Surgery (thyroidectomy) to remove part or all of the thyroid gland, especially if the goiter is causing significant symptoms or if there are concersabout cancer. If you experience symptoms of thyroid goiter, consult an endocrinologist or thyroid specialist for evaluation and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Hypothyroidism",
+       "patterns": ["What are the symptoms of hypothyroidism?", "How is hypothyroidism treated?", "What should I do if I suspect I have hypothyroidism?", "Which specialist should I see for hypothyroidism?"],
+       "responses": ["If you suspect you have hypothyroidism, you may experience symptoms such as: 1- Fatigue and weakness. 2- Weight gain or difficulty losing weight. 3- Cold intolerance. 4- Dry skin and hair. 5- Constipation. 6- Muscle aches and stiffness. 7- Joint pain and swelling. 8- Depression or mood swings. 9- Memory problems or difficulty concentrating. 10- Menstrual irregularities in women. Hypothyroidism occurs when the thyroid gland doesn't produce enough thyroid hormone, leading to a slowdown in bodily functions. Treatment for hypothyroidism typically involves lifelong thyroid hormone replacement therapy with medications like levothyroxine. The goal of treatment is to restore thyroid hormone levels to normal and alleviate symptoms. If you experience symptoms of hypothyroidism, consult an endocrinologist or primary care physician for evaluation and management."],
+       "context_set": ""
+      }, 
+ 
+      {"tag": "Gout",
+       "patterns": ["What are the symptoms of gout?", "How is gout treated?", "What should I do if I suspect I have gout?", "Which specialist should I see for gout?"],
+       "responses": ["If you suspect you have gout, you may experience symptoms such as: 1- Sudden, intense pain, often in the big toe but can affect other joints such as the ankle, knee, elbow, wrist, or fingers. 2- Swelling and redness in the affected joint. 3- Warmth and tenderness in the joint. 4- Limited range of motion in the joint. Gout is a type of arthritis caused by the buildup of uric acid crystals in the joints. Treatment for gout aims to relieve pain, reduce inflammation, and lower uric acid levels in the blood to prevent future attacks. Treatment options may include: 1- Nonsteroidal anti-inflammatory drugs (NSAIDs) to relieve pain and inflammation. 2- Colchicine, an anti-inflammatory medication that can help reduce the severity of gout attacks. 3- Corticosteroids, either orally or injected into the affected joint, to reduce inflammation. 4- Medications that lower uric acid levels in the blood, such as allopurinol or febuxostat. If you experience symptoms of gout, consult a rheumatologist or primary care physician for diagnosis and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Peptic Ulcer",
+       "patterns": ["What are the symptoms of peptic ulcer?", "How is peptic ulcer treated?", "What should I do if I suspect I have peptic ulcer?", "Which specialist should I see for peptic ulcer?"],
+       "responses": ["If you suspect you have peptic ulcer, you may experience symptoms such as: 1- Burning stomach pain. 2- Indigestion. 3- Nausea or vomiting. 4- Bloating. 5- Heartburn. 6- Dark or bloody stools. 7- Unexplained weight loss. Peptic ulcers are sores that develop on the lining of the stomach, esophagus, or small intestine, usually as a result of infection with Helicobacter pylori bacteria or long-term use of nonsteroidal anti-inflammatory drugs (NSAIDs). Treatment for peptic ulcer may include: 1- Antibiotics to eradicate H. pylori infection. 2- Proton pump inhibitors (PPIs) or histamine receptor blockers (H2 blockers) to reduce stomach acid production. 3- Antacids to neutralize stomach acid and provide relief from symptoms. 4- Avoiding NSAIDs or using them sparingly under medical supervision. If you experience symptoms of peptic ulcer, consult a gastroenterologist or primary care physician for diagnosis and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Diarrhea",
+       "patterns": ["What are the causes of diarrhea?", "How is diarrhea treated?", "What should I do if I have diarrhea?", "When should I see a doctor for diarrhea?"],
+       "responses": ["Diarrhea can be caused by various factors, including viral or bacterial infections, food poisoning, medications, or underlying medical conditions such as irritable bowel syndrome (IBS) or inflammatory bowel disease (IBD). Treatment for diarrhea depends on the underlying cause and severity of symptoms. In many cases, diarrhea resolves on its own within a few days and can be managed with rest, hydration, and over-the-counter medications like loperamide (Imodium) to reduce frequency of bowel movements. However, you should see a doctor if you experience: 1- Persistent diarrhea lasting more than two days. 2- High fever. 3- Severe abdominal or rectal pain. 4- Bloody or black stools. 5- Signs of dehydration, such as dry mouth, dark urine, or dizziness. Your doctor can determine the cause of your diarrhea and recommend appropriate treatment."],
+       "context_set": ""
+      },
+
+      {"tag": "H. pylori Infection",
+       "patterns": ["What are the symptoms of H. pylori infection?", "How is H. pylori infection treated?", "What should I do if I suspect I have H. pylori infection?", "Which specialist should I see for H. pylori infection?"],
+       "responses": ["If you suspect you have H. pylori infection, you may experience symptoms such as: 1- Burning stomach pain. 2- Nausea or vomiting. 3- Bloating. 4- Loss of appetite. 5- Unexplained weight loss. H. pylori infection is a bacterial infection that can cause peptic ulcers and increase the risk of stomach cancer. Treatment for H. pylori infection typically involves a combination of antibiotics (such as amoxicillin, clarithromycin, or metronidazole) and proton pump inhibitors (PPIs) or histamine receptor blockers (H2 blockers) to reduce stomach acid production. If you experience symptoms of H. pylori infection, consult a gastroenterologist or primary care physician for diagnosis and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Gastroesophageal Reflux Disease (GERD)",
+       "patterns": ["What are the symptoms of GERD?", "How is GERD treated?", "What should I do if I suspect I have GERD?", "Which specialist should I see for GERD?"],
+       "responses": ["If you suspect you have GERD, you may experience symptoms such as: 1- Heartburn, a burning sensation in the chest that may worsen after eating or lying down. 2- Regurgitation of stomach acid or food into the mouth. 3- Chest pain or discomfort. 4- Difficulty swallowing. 5- Chronic cough or hoarseness. GERD occurs when stomach acid flows back into the esophagus, causing irritation and inflammation of the esophageal lining. Treatment for GERD may include: 1- Lifestyle changes, such as avoiding trigger foods, losing weight, and elevating the head of the bed. 2- Over-the-counter medications like antacids, H2 blockers, or proton pump inhibitors (PPIs) to reduce stomach acid production. 3- Prescription medications or surgery in severe cases that don't respond to conservative measures. If you experience symptoms of GERD, consult a gastroenterologist or primary care physician for evaluation and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Colitis",
+       "patterns": ["What are the symptoms of colitis?", "How is colitis treated?", "What should I do if I suspect I have colitis?", "Which specialist should I see for colitis?"],
+       "responses": ["If you suspect you have colitis, you may experience symptoms such as: 1- Abdominal pain or cramping. 2- Diarrhea, sometimes with blood or pus. 3- Rectal bleeding. 4- Urgency to have a bowel movement. 5- Persistent diarrhea or constipation. Colitis refers to inflammation of the colon (large intestine) and can be caused by various factors, including infections, autoimmune diseases (such as ulcerative colitis or Crohn's disease), or ischemic colitis. Treatment for colitis depends on the underlying cause and severity of symptoms. Options may include: 1- Medications to reduce inflammation, such as corticosteroids, immunomodulators, or biologics. 2- Antibiotics to treat infections. 3- Anti-diarrheal medications or dietary changes to manage symptoms. 4- Surgery in severe cases or complications such as perforation or toxic megacolon. If you experience symptoms of colitis, consult a gastroenterologist or primary care physician for evaluation and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Anthrax",
+       "patterns": ["What are the symptoms of anthrax?", "How is anthrax treated?", "What should I do if I suspect I have anthrax?", "Which specialist should I see for anthrax?"],
+       "responses": ["If you suspect you have anthrax, you may experience symptoms such as: 1- Fever and chills. 2- Flu-like symptoms, such as body aches and fatigue. 3- Cough or chest discomfort. 4- Shortness of breath. 5- Gastrointestinal symptoms, such as nausea, vomiting, or diarrhea. Anthrax is a bacterial infection caused by Bacillus anthracis. Treatment for anthrax depends on the type of infection and may include antibiotics such as ciprofloxacin, doxycycline, or penicillin. In severe cases, treatment may also include antitoxins or supportive care such as intravenous fluids and respiratory support. If you experience symptoms of anthrax, seek medical attention immediately, and inform healthcare providers about any potential exposure to anthrax spores."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Polio",
+       "patterns": ["What are the symptoms of polio?", "How is polio treated?", "What should I do if I suspect my child has polio?", "Which specialist should I see for polio?"],
+       "responses": ["If you suspect your child has polio, they may experience symptoms such as: 1- Fever. 2- Fatigue. 3- Headache. 4- Muscle weakness or paralysis, often affecting the legs. 5- Stiff neck and back. 6- Difficulty swallowing or breathing. Polio is a viral infection caused by the poliovirus. There is no cure for polio, but vaccination is highly effective in preventing the disease. Treatment for polio focuses on supportive care to relieve symptoms and prevent complications. This may include rest, pain management, physical therapy, and assistive devices such as braces or crutches. If you suspect your child has polio, seek medical attention immediately, and inform healthcare providers about any potential exposure to the poliovirus."],
+       "context_set": ""
+      },
+
+      {"tag": "Plague",
+       "patterns": ["What are the symptoms of plague?", "How is plague treated?", "What should I do if I suspect I have plague?", "Which specialist should I see for plague?"],
+       "responses": ["If you suspect you have plague, you may experience symptoms such as: 1- Sudden onset of fever. 2- Chills. 3- Headache. 4- Muscle aches. 5- Swollen and tender lymph nodes (buboes), especially in the groin, armpit, or neck. Plague is a bacterial infection caused by the bacterium Yersinia pestis. There are different forms of plague, including bubonic, septicemic, and pneumonic plague. Treatment for plague typically involves antibiotics such as streptomycin, gentamicin, or doxycycline. Early treatment is essential to prevent complications and improve outcomes. If you experience symptoms of plague, seek medical attention immediately, and inform healthcare providers about any potential exposure to plague-infected animals or individuals."],
+       "context_set": ""
+      },
+
+      {"tag": "Lice Infestation",
+       "patterns": ["What are the symptoms of lice infestation?", "How is lice infestation treated?", "What should I do if I suspect I have lice infestation?", "Which specialist should I see for lice infestation?"],
+       "responses": ["If you suspect you have lice infestation, you may experience symptoms such as: 1- Itching, especially in the scalp, neck, or behind the ears. 2- Visible lice or their eggs (nits) on the hair or clothing. Lice are small parasitic insects that infest the human body, particularly the scalp, and feed on blood. Treatment for lice infestation typically involves using over-the-counter or prescription medications such as pyrethrin or permethrin shampoo, or malathion lotion, which kill lice and their eggs. It's also important to wash clothing, bedding, and personal items in hot water and dry them on high heat to kill any remaining lice or eggs. If you experience symptoms of lice infestation, consult a dermatologist or primary care physician for evaluation and management."],
+       "context_set": ""
+      },
+ 
+      {"tag": "Plague",
+       "patterns": ["What are the symptoms of plague?", "How is plague treated?", "What should I do if I suspect I have plague?", "Which specialist should I see for plague?"],
+       "responses": ["If you suspect you have plague, you may experience symptoms such as: 1- Sudden onset of fever. 2- Chills. 3- Headache. 4- Muscle aches. 5- Swollen and tender lymph nodes (buboes), especially in the groin, armpit, or neck. Plague is a bacterial infection caused by the bacterium Yersinia pestis. There are different forms of plague, including bubonic, septicemic, and pneumonic plague. Treatment for plague typically involves antibiotics such as streptomycin, gentamicin, or doxycycline. Early treatment is essential to prevent complications and improve outcomes. If you experience symptoms of plague, seek medical attention immediately, and inform healthcare providers about any potential exposure to plague-infected animals or individuals."],
+       "context_set": ""
+      },
+
+      {"tag": "Rabies",
+       "patterns": ["What are the symptoms of rabies?", "How is rabies treated?", "What should I do if I suspect I have rabies?", "Which specialist should I see for rabies?"],
+       "responses": ["If you suspect you have rabies, you may experience symptoms such as: 1- Fever. 2- Headache. 3- Fatigue. 4- Muscle weakness or paralysis. 5- Agitation or confusion. 6- Hallucinations. 7- Difficulty swallowing. Rabies is a viral infection transmitted through the saliva of infected animals, most commonly through the bite of a rabid animal. Once symptoms of rabies develop, the disease is almost always fatal. Treatment for rabies involves a series of rabies vaccinations administered immediately after exposure to the virus, followed by supportive care to manage symptoms. If you suspect you have been exposed to rabies, seek medical attention immediately for post-exposure prophylaxis (PEP) to prevent the development of rabies."],
+       "context_set": ""
+      },
+
+      {"tag": "Elephantiasis",
+       "patterns": ["What are the symptoms of elephantiasis?", "How is elephantiasis treated?", "What should I do if I suspect I have elephantiasis?", "Which specialist should I see for elephantiasis?"],
+       "responses": ["If you suspect you have elephantiasis, you may experience symptoms such as: 1- Swelling and thickening of the skin, usually in the legs, arms, or genital area. 2- Swollen and enlarged lymph nodes. 3- Pain or discomfort in the affected area. Elephantiasis, also known as lymphatic filariasis, is a parasitic infection transmitted through the bite of infected mosquitoes. Treatment for elephantiasis typically involves antiparasitic medications such as diethylcarbamazine (DEC) or albendazole, often in combination with antibiotics to treat secondary bacterial infections. In advanced cases, surgical procedures may be necessary to remove excess tissue or repair damaged lymphatic vessels. If you experience symptoms of elephantiasis, consult a healthcare provider or infectious disease specialist for evaluation and management."],
+       "context_set": ""
+      },
+
+      {"tag": "High Cholesterol",
+       "patterns": ["What are the symptoms of high cholesterol?", "How is high cholesterol treated?", "What should I do if I suspect I have high cholesterol?", "Which specialist should I see for high cholesterol?"],
+       "responses": ["If you suspect you have high cholesterol, you may not experience any symptoms initially. However, high cholesterol levels can increase your risk of heart disease and stroke over time. Treatment for high cholesterol typically involves lifestyle changes such as adopting a healthy diet, regular exercise, and quitting smoking. In some cases, medications such as statins may be prescribed to lower cholesterol levels. If you have risk factors for high cholesterol, such as a family history of heart disease or obesity, consult a healthcare provider for cholesterol screening and management."],
+       "context_set": ""
+      },
+
+      {"tag": "Angina",
+       "patterns": ["What are the symptoms of angina?", "How is angina treated?", "What should I do if I suspect I have angina?", "Which specialist should I see for angina?"],
+       "responses": ["If you suspect you have angina, you may experience symptoms such as: 1- Chest pain or discomfort, often described as pressure, squeezing, or burning. 2- Pain or discomfort in the arms, shoulders, neck, jaw, or back. 3- Shortness of breath. 4- Nausea, fatigue, or dizziness. Angina is a symptom of underlying heart disease, usually caused by reduced blood flow to the heart muscle due to narrowed or blocked coronary arteries. Treatment for angina aims to relieve symptoms, prevent complications, and improve overall heart health. Options may include lifestyle changes such as heart-healthy diet, regular exercise, and stress management, as well as medications to reduce chest pain and improve blood flow to the heart. If you experience symptoms of angina, seek medical attention immediately, as it may indicate a serious heart condition."],
+       "context_set": ""
+      },
+
+      {"tag": "Blood Clots",
+       "patterns": ["What are the symptoms of blood clots?", "How are blood clots treated?", "What should I do if I suspect I have a blood clot?", "Which specialist should I see for blood clots?"],
+       "responses": ["If you suspect you have a blood clot, you may experience symptoms such as: 1- Swelling, pain, or tenderness in the affected limb. 2- Redness or discoloration of the skin. 3- Warmth over the area of the clot. 4- Difficulty breathing or chest pain if the clot has traveled to the lungs (pulmonary embolism). 5- Sudden weakness or numbness, especially on one side of the body, if the clot has traveled to the brain (stroke). Blood clots can form in the veins (deep vein thrombosis) or arteries (arterial thrombosis) and can be life-threatening if not treated promptly. Treatment for blood clots may include anticoagulant medications (blood thinners) to prevent further clotting, thrombolytic therapy to dissolve clots, or surgical procedures to remove or bypass the clot. If you suspect you have a blood clot, seek medical attention immediately, as prompt treatment is essential to prevent complications."],
+       "context_set": "" 
+      },
+
+      {"tag": "Blood Clots",
+       "patterns": ["What are the symptoms of blood clots?", "How are blood clots treated?", "What should I do if I suspect I have a blood clot?", "Which specialist should I see for blood clots?"],
+       "responses": ["If you suspect you have a blood clot, you may experience symptoms such as: 1- Swelling, pain, or tenderness in the affected limb. 2- Redness or discoloration of the skin. 3- Warmth over the area of the clot. 4- Difficulty breathing or chest pain if the clot has traveled to the lungs (pulmonary embolism). 5- Sudden weakness or numbness, especially on one side of the body, if the clot has traveled to the brain (stroke). Blood clots can form in the veins (deep vein thrombosis) or arteries (arterial thrombosis) and can be life-threatening if not treated promptly. Treatment for blood clots may include anticoagulant medications (blood thinners) to prevent further clotting, thrombolytic therapy to dissolve clots, or surgical procedures to remove or bypass the clot. If you suspect you have a blood clot, seek medical attention immediately, as prompt treatment is essential to prevent complications."],
+       "context_set": ""
+      },
+
+      {"tag": "Low Blood Pressure",
+       "patterns": ["What are the symptoms of low blood pressure?", "How is low blood pressure treated?", "What should I do if I suspect I have low blood pressure?", "Which specialist should I see for low blood pressure?"],
+       "responses": ["Low blood pressure, also known as hypotension, can cause symptoms such as: 1- Dizziness or lightheadedness, especially when standing up. 2- Fainting or near-fainting (syncope). 3- Blurred vision. 4- Fatigue. 5- Nausea. 6- Difficulty concentrating. 7- Cold, clammy, pale skin. If you experience these symptoms, especially if they occur frequently or are severe, it's important to consult a healthcare provider for evaluation. Treatment for low blood pressure depends on the underlying cause and severity of symptoms. In some cases, lifestyle modifications such as increasing salt intake, staying hydrated, wearing compression stockings, and avoiding alcohol and caffeine can help raise blood pressure. Medications such as fludrocortisone or midodrine may also be prescribed in certain situations. If you suspect you have low blood pressure, consult a primary care physician or cardiologist for evaluation and management."],
+       "context_set": ""
+      } 
+
+       
+ 
+
+   ]
+}
